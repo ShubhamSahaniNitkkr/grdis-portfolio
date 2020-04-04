@@ -1,0 +1,62 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.5fr;
+  grid-template-rows: 1fr 4fr 3fr 1fr;
+  grid-template-areas:
+    "main       main        header"
+    "main       main        contact"
+    "main       main        contact"
+    "footer     footer      contact";
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  grid-row: 1;
+  grid-column: 1;
+  grid-area: main;
+  background-color: #009688;
+}
+
+section.featured1 {
+  grid-row: 3;
+  grid-column: 1;
+  grid-area: featured1;
+}
+
+section.featured2 {
+  grid-row: 3;
+  grid-column: 2;
+  grid-area: featured2;
+}
+
+section.contactus {
+  grid-row: 4;
+  grid-column: 1;
+  grid-area: footer;
+  background-color: #673ab7;
+}
+
+header {
+  grid-row: 1;
+  grid-column: 3;
+  grid-area: header;
+}
+
+.intro {
+  grid-row: 2;
+  grid-column: 3;
+  grid-area: contact;
+  background-size: cover;
+  background-color: #3f51b5;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.socialBtn:hover {
+  cursor: pointer;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  box-shadow: 4px 4px 4px black;
+}
+/*# sourceMappingURL=home.css.map */
